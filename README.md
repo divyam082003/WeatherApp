@@ -1,6 +1,6 @@
 <h1 style="font-size:48px;"> ☀️ WeatherApp</h1>
 
-<h2 style="font-size:36px;">WeatherApp** is a simple and intuitive weather application designed to provide users with real-time weather updates. Stay informed about current conditions, forecasts, and alerts with an easy-to-use interface.</h2>
+<h2 style="font-size:36px;">WeatherApp is a simple and intuitive weather application designed to provide users with real-time weather updates. Stay informed about current conditions, forecasts, and alerts with an easy-to-use interface.</h2>
 
 ---
 
