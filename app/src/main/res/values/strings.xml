@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Divyam_WeatherApp</string>
+
+    <string-array name="refresh_intervals">
+        <item>1 Day</item>
+        <item>1 Hour</item>
+    </string-array>
+
+</resources>

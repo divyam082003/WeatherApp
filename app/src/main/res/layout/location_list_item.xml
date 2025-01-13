@@ -1,0 +1,77 @@
+<!-- item_location_weather.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listCardView"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="false"
+    app:cardCornerRadius="8dp"
+    android:padding="8dp"
+    android:backgroundTint="#99000000"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/cityNameListTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="London,UK"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tempListTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="35 C"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/cityNameListTV"
+            app:layout_constraintLeft_toLeftOf="@id/cityNameListTV"
+            />
+
+        <TextView
+            android:id="@+id/weatherDescListTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="cloudy"
+            android:textColor="@color/white"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/tempListTV"
+            app:layout_constraintLeft_toLeftOf="@id/cityNameListTV"
+            />
+
+        <ImageView
+            android:id="@+id/weatherIconListIV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toTopOf="@id/cityNameListTV"
+            app:layout_constraintBottom_toBottomOf="@id/weatherDescListTV"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/cloudy"
+            android:background="@drawable/list_image_bg"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

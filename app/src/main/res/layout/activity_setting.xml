@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".activities.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/modeIconIV"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/dark_icon"
+            android:layout_margin="4dp"
+            android:padding="2dp"
+            />
+
+        <TextView
+            android:id="@+id/themeToggleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enable Dark Mode"
+            android:textSize="25sp"
+            android:padding="4dp" />
+
+        <Switch
+            android:id="@+id/themeToggleSwitch"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:checked="false"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/auto_theme"
+            android:layout_margin="4dp"
+            android:padding="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Theme (Day/Night)"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:padding="8dp" />
+
+
+        <CheckBox
+            android:id="@+id/autoThemeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/refresh"
+            android:layout_margin="4dp"
+            android:padding="2dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refresh Weather"
+                android:textSize="22sp"
+                android:padding="4dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="in every"
+                android:textSize="16sp"
+                android:paddingStart="4dp"
+                 />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/refreshWeatherSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/refresh_intervals"
+            android:layout_marginStart="16dp"
+            android:textAlignment="viewEnd"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WeatherApp" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/Pesto</item>
+        <item name="colorOnPrimary">@color/Zeus</item>
+        <item name="colorSecondary">@color/Brown_Derby</item>
+        <item name="colorOnSecondary">@color/Brandy_Punch</item>
+        <item name="colorAccent">@color/Brandy_Punch</item>
+
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>
